@@ -1,12 +1,12 @@
 
 public class Complain {
     private String name;
-    private int cnic;
+    private String cnic;
     private String description;
     private boolean isSolved;
     static int noComplain;
 
-    Complain(String name, int cnic, String description){
+    Complain(String name, String cnic, String description){
         this.cnic = cnic;
         this.name = name;
         this.description = description;
@@ -18,7 +18,7 @@ public class Complain {
         noComplain++;
     }
 
-    public int getCnic(){
+    public String getCnic(){
         return cnic;
     }
 
